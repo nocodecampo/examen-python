@@ -1,0 +1,176 @@
+/* ✅ Reset General */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* ✅ Colores base */
+:root {
+  --primary-color: #2c3e50;
+  --secondary-color: #34495e;
+  --accent-color: #f39c12;
+  --light-color: #ecf0f1;
+  --dark-text: #2d3436;
+  --white: #ffffff;
+}
+
+/* ✅ Estilo General */
+body {
+  background-color: var(--light-color);
+  color: var(--dark-text);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+body.bg-home{
+  background-image: url(../img/bg-home.jpg);
+  background-size: cover;
+  background-position: center;
+}
+body.bg-notas{
+  background-image: url(../img/bg-notas.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* ✅ Contenedor Principal */
+.container {
+  max-width: 900px;
+  margin: 24px auto;
+  background: var(--white);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ✅ Encabezado */
+header {
+  background-color: var(--primary-color);
+  color: var(--white);
+  text-align: center;
+  padding: 20px 10px;
+}
+
+header h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* ✅ Botones */
+.btn-orange {
+  background-color: var(--accent-color);
+  color: var(--white);
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight:500;
+  letter-spacing: 0.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-orange:hover {
+  background-color: #e67e22;
+  transform: scale(1.02);
+}
+
+.btn-full {
+  width: 100%;
+  text-align: center;
+}
+
+/* ✅ Formularios */
+form {
+  background: var(--white);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-label {
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.form-control, .form-select {
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: border-color 0.3s ease;
+}
+
+.form-control:focus, .form-select:focus {
+  border-color: var(--accent-color);
+  outline: none;
+}
+
+/* ✅ Tablas */
+.table {
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: var(--white);
+}
+
+.table th {
+  background-color: var(--secondary-color) !important;
+  color: var(--white);
+  font-size: 1.1rem;
+  padding: 12px;
+  text-align: center;
+}
+
+.table td {
+  padding: 12px;
+  text-align: center;
+}
+
+/* ✅ Footer */
+footer {
+  background-color: var(--primary-color);
+  color: var(--white);
+  text-align: center;
+  padding: 15px 20px;
+  margin-top: auto;
+}
+
+footer p {
+  font-size: 1em;
+}
+
+.social-links {
+  margin-top: 10px;
+}
+
+.social-links a {
+  color: var(--white);
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 1.1em;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: var(--accent-color);
+}
+
+/* ✅ Media Queries para Responsive */
+@media (max-width: 768px) {
+  .container {
+      width: 90%;
+  }
+
+  header h1 {
+      font-size: 1.8rem;
+  }
+
+  .btn-orange {
+      width: 100%;
+      display: block;
+  }
+}
