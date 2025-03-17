@@ -37,6 +37,13 @@ body.bg-notas{
   background-attachment: fixed;
 }
 
+body.bg-asignar{
+  background-image: url(../img/bg-asignar.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
 /* ✅ Contenedor Principal */
 .container {
   max-width: 900px;
@@ -55,9 +62,10 @@ header {
   padding: 20px 10px;
 }
 
-header h1 {
+h1 {
   font-size: 2rem;
   font-weight: bold;
+  color: var(--primary-color)!important;
 }
 
 /* ✅ Botones */
